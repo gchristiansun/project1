@@ -30,7 +30,7 @@ nav a {
 
 @media (max-width: 450px) {
     .banner {
-        height: 400px;
+        height: 500px
     }
 }
 
@@ -230,11 +230,12 @@ a {
     #menu {
         color: #fff;
         padding: 10px;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.705);
-        margin-top: 6px;
-        left: 0;
-        width: 95%;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.89);
+        margin-top: 7px;
+        right: 0;
+        height: 100vh;
+        animation: navigasi 1s;
     }
 
     #menu ul {
@@ -271,6 +272,9 @@ a {
 
     .bi-list {
         color: white;
+        font-size: 30px;
+        padding: 0;
+        margin-right: 15px;
     }
 
     header {
@@ -313,4 +317,22 @@ a {
 
 body {
     margin: 0
+}
+
+@keyframes navigasi {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes navigasi-closed {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
