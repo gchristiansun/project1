@@ -1,0 +1,296 @@
+header {
+    background-color: rgb(19, 156, 19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h2{
+    color: white;
+    margin: 20px
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 20px
+}
+
+.banner {
+    width: 100%
+}
+
+@media (max-width: 450px) {
+    .banner {
+        height: 400px;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    margin: 20px 20px;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card:hover .publish {
+    color: #a0a0a0;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-card {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.artikel {
+    text-align: center;
+    margin: 20px 20px 0px 20px
+}
+
+.publish {
+    text-align: center;
+    color: white;
+    bottom: 0;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 60px;
+}
+
+footer {
+    background-color: #313131;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    bottom:0;
+}
+
+footer h3 {
+    color: white
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 170px
+}
+
+button {
+    background-color: rgb(19, 156, 19);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+hr {
+    background-color: white;
+    height: 0.1px;
+    width: 100%;
+    margin-top: 20px
+}
+
+footer p{
+    color: white
+}
+
+footer nav {
+    margin: 0px 20px 20px 20px;
+}
+
+.contact-page {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page h2 {
+    margin-top: 40px
+}
+
+.container-contact {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+form {
+    width: 100%
+}
+
+.contact {
+    width: 270px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 270px;
+    margin: 5px;
+    border-radius: 5px;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 16px;
+}
+
+label {
+    margin: 10px 0 10px 0;
+}
+
+.img-page {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color:black
+}
+
+.slide {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+    animation: infinite-scroll 8s linear infinite;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100px;
+    position: relative;
+}
+
+.slide img:hover {
+    transform: translateY(-5px);
+}
+
+.container-slide {
+    overflow: hidden;
+    display: flex;
+    margin-right: 150px;
+    cursor: pointer;
+}
+
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media (max-width: 600px) {
+    #menu {
+        color: #fff;
+        padding: 10px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.705);
+        margin-top: 14px;
+        left: 0;
+        width: 95%;
+    }
+
+    #menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #menu li {
+        margin: 20px 20px 20px 20px;
+    }
+
+    #menu a {
+        color: #fff;
+        text-decoration: none;
+        color: black;
+        padding: 5px 50px 5px 7px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .toggle {
+        border: none;
+
+    }
+
+    .bi {
+        color: black;
+        margin-left: 20px
+    }
+
+    .bi-list {
+        color: white
+    }
+}
+
+@media (min-width: 600px) {
+    .toggle {
+        display: none;
+    }
+
+    #menu ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    #menu li {
+        margin: 20px 0;
+    }
+
+    .bi {
+        display: none;
+    }
+}
+

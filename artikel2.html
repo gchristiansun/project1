@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+      main {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+      }
+
+      main h1 {
+        text-align: start;
+      }
+
+      .artikel {
+        max-width: 750px;
+        min-width: 350px;
+      }
+
+      main p {
+        text-align: justify;
+        line-height: 1.7;
+      }
+
+      .image-artikel {
+        max-width: 100%;
+        min-width: 300px;
+      }
+
+      .artikel-more {
+        float:inline-end;
+        margin-right: 10px;
+      }
+
+      .artikel-more:hover {
+        color: blue;
+        transform: translateX(20px);
+      }
+
+      .sumber {
+        text-align: left;
+      }
+    </style>
+</head>
+<body>
+    <header>
+      <a href=""><h2>OneConnect</h2></a>
+      <div id="navbar-toggle">
+        <button id="menu-toggle" class="toggle bi bi-list"></button>
+        <nav id="menu" class="hidden">
+            <ul>
+                <li><span class="bi bi-house-fill"></span> <a href="index.html">Home</a></li>
+                <li><span class="bi bi-info-circle"> </span><a href="about.html">About</a></li>
+                <li><span class="bi bi-envelope"></span> <a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <div class="artikel">
+            <img src="images/ayam_taliwang.png" alt="Image" class="image-artikel">
+            <h1>Ayam Taliwang</h1>
+            <p>Makanan khas daerah Sulawesi Tengah adalah kaledo. Kaledo atau kaki lembu Donggala adalah makanan yang mirip seperti sop buntut, dan disajikan bukan dengan nasi melainkan dengan ubi. Namun, menurut beberapa orang lainnya, kaledo berasal dari bahasa Kaili yang merupakan bahasa penduduk palu. Makanan khas ini awalnya hanya dihidangkan oleh masyarakat Kaili pada saat hari-hari besar saja, seperti Pernikahan, syukuran, maupun lebaran. Masyarakat etnik Kaili meyakini bahwa kaki sapi merupakan simbol kekuatan dan proses ketabahan dalam menjalani kehidupan.
+            <br>
+            <br>
+            Menurut para tokoh budaya Kaili, bahwa zaman dulu ada seorang laki-laki yang datang terlambat pada acara pembagian daging sapi yang dilakukan oleh seorang dermawan yang kaya, yaitu hari raya qurban. Karena keterlambatannya itu, laki-laki tersebut hanya mendapat potongan pada bagian kaki sapi. Dengan perasaan kecewa, ia pun pulang ke rumah dan memberikan kaki sapi tadi kepada istrinya untuk dijadikan hidangan. Saat ia sedang mencicipi masakan istrinya, si istri pun bertanya “Naka’a?” yang berarti keras, dan ia pun menjawab “Ledo!” yang berarti tidak. Karena penyebutan dua kata tadi, akhirnya terciptalah nama makanan yaitu "kaledo", yang memiliki arti "tidak keras". Jadi, kata Kaledo bukanlah “Kaki Lembu Donggala”, melainkan pemaknaan dari ‘tidak keras’ akibat proses memasak yang lama.</p>
+
+            <p class="sumber">Sumber: <a href="https://www.liputan6.com/hot/read/5171603/makanan-khas-daerah-adalah-warisan-budaya-berikut-contohnya">www.liputan6.com</a>, <a href="https://www.goodnewsfromindonesia.id/2022/11/19/kaledo-filosofi-dari-lezatnya-kuliner-etnik-kaili">www.goodnewsfromindonesia.id</a></p>
+            <br>
+            <p>Publish Date: May 8, 2024</p>
+            <a class="artikel-more" href="artikel3.html">
+              <p><i>Artikel lainnya >></i></p>
+            </a>
+            <div class="container-slide">
+              <div class="slide">
+                <a href="artikel1.html">
+                  <img src="images/kaledo.jpg" alt="Image">
+                </a>
+                <a href="artikel3.html">
+                  <img src="images/kerupuk_basah.jpg" alt="Image">
+                </a>
+                <a href="artikel4.html">
+                  <img src="images/rendang.jpg" alt="Image">
+                </a>
+                <a href="artikel5.html">
+                  <img src="images/sate_buntel.jpg" alt="Image">
+                </a>
+              </div>
+              <div class="slide">
+                <a href="artikel1.html">
+                  <img src="images/kaledo.jpg" alt="Image">
+                </a>
+                <a href="artikel3.html">
+                  <img src="images/kerupuk_basah.jpg" alt="Image">
+                </a>
+                <a href="artikel4.html">
+                  <img src="images/rendang.jpg" alt="Image">
+                </a>
+                <a href="artikel5.html">
+                  <img src="images/sate_buntel.jpg" alt="Image">
+                </a>
+              </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>One Connect</h3>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <form>
+            <input type="email" id="subscribe" name="subscribe" placeholder="subscribe for newsletter">
+            <button type="submit">Subscribe</button>
+        </form>
+        <hr>
+        <p>&copy; 2024 One Connect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

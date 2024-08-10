@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        main h2{
+            justify-content: center;
+            margin: 30px 0px 0px 0px;
+        }
+
+        main p {
+            margin-bottom: 50px;
+            line-height: 1.8;
+            text-align: justify;
+            width: 700px;
+            min-width: 300px;
+        }
+
+        @media (max-width: 800px) {
+            main p {
+                margin-bottom: 50px;
+                line-height: 1.8;
+                text-align: justify;
+                width: 80%
+            }
+        }
+
+        main a {
+            text-decoration: none;
+            color: rgb(19, 156, 19);
+            text-align: left;
+        }
+
+        main {
+            display: grid;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href=""><h2>OneConnect</h2></a>
+        <div id="navbar-toggle">
+            <button id="menu-toggle" class="toggle bi bi-list"></button>
+            <nav id="menu" class="hidden">
+                <ul>
+                    <li><span class="bi bi-house-fill"></span> <a href="index.html">Home</a></li>
+                    <li><span class="bi bi-info-circle"> </span><a href="about.html">About</a></li>
+                    <li><span class="bi bi-envelope"></span> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>About</h2>
+        <p>One Connect is a company that specializes in providing internet services to its customers. We have been in
+            business for over 10 years and have a proven track record of providing reliable and affordable internet
+            solutions to our customers. Our team of experts is dedicated to providing the best possible service to our
+            customers and ensuring that they have a seamless online experience. We offer a range of internet packages to
+            suit the needs of our customers, from basic home internet to high-speed business solutions. Our customer
+            service
+            team is available 24/7 to assist with any questions or issues that may arise. We are committed to providing
+            the
+            best possible service to our customers and look forward to helping you stay connected.</p>
+
+        <h2>Our Team</h2>
+
+        <p>Our team of experts is dedicated to providing the best possible service to our customers and ensuring that
+            they
+            have a seamless online experience. We offer a range of internet packages to suit the needs of our customers,
+            from basic home internet to high-speed business solutions. Our customer service team is available 24/7 to
+            assist
+            with any questions or issues that may arise. We are committed to providing the best possible service to our
+            customers and look forward to helping you stay connected.</p>
+
+        <h2>Our Mission</h2>
+
+        <p>Our mission is to provide reliable and affordable internet solutions to our customers. We are committed to
+            providing the best possible service and ensuring that our customers have a seamless online experience. We
+            are
+            dedicated to staying up-to-date with the latest technology and trends in the industry to ensure that our
+            customers have access to the best possible internet solutions. We are committed to providing the best
+            possible
+            service to our customers and look forward to helping you stay connected.</p>
+
+        <h2>Contact</h2>
+
+        <p>If you have any questions or would like to learn more about our internet services, please feel free to
+            contact
+            us. Our customer service team is available 24/7 to assist with any questions or issues that may arise. We
+            are
+            committed to providing the best possible service to our customers and look forward to helping you stay
+            connected.
+            <br>Email: person@oneconnect.com
+            <br>Phone: 123-456-7890
+            <br>Address: 123 Main Street, Anytown, USA
+        </p>
+
+        <a href="index.html">Back to Home</a>
+    </main>
+    <footer>
+        <h3>One Connect</h3>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <form>
+            <input type="email" id="subscribe" name="subscribe" placeholder="subscribe for newsletter">
+            <button type="submit">Subscribe</button>
+        </form>
+        <hr>
+        <p>&copy; 2024 One Connect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
