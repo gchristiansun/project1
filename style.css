@@ -231,8 +231,8 @@ a {
         color: #fff;
         padding: 10px;
         position: fixed;
-        background-color: rgba(255, 255, 255, 0.89);
-        margin-top: 7px;
+        background: linear-gradient(to left, white, rgba(255, 255, 255, 0.678));
+        margin-top: 3px;
         right: 0;
         height: 100vh;
         animation: navigasi 1s;
@@ -286,12 +286,29 @@ a {
         position: sticky;
         top: 0;
         z-index: 1000;
-        height: 50px
+        height: 40px;
+
     }
 
     header h2{
         color: white;
         margin: 20px 20px 20px 10px
+    }
+
+    li h3 {
+        margin-left: 20px;
+        color: black;
+        margin-top: 10px
+    }
+
+    li h2 {
+        color: white;
+        position: absolute;
+        bottom: 80px;
+        font-weight: bold;
+        background-color: rgb(19, 156, 19);
+        padding: 20px;
+        border-radius: 10px;
     }
 }
 
@@ -313,6 +330,14 @@ a {
     .bi {
         display: none;
     }
+
+    li h3 {
+        display: none;
+    }
+
+    ul hr {
+        display: none;
+    }
 }
 
 body {
@@ -325,14 +350,5 @@ body {
     }
     to {
         transform: translateX(0);
-    }
-}
-
-@keyframes navigasi-closed {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(100%);
     }
 }
