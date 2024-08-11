@@ -335,6 +335,10 @@ a {
         display: none;
     }
 
+    li h2 {
+        display: none;
+    }
+
     ul hr {
         display: none;
     }
