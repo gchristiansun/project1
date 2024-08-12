@@ -66,10 +66,6 @@ body {
     margin: 0
 }
 
-body p {
-    font-size: 12px;
-}
-
 .image-card {
     width: 100%;
     border-top-left-radius: 5px;
@@ -242,7 +238,6 @@ a {
         height: 100vh;
         transition: right 0.3s ease;
         z-index: -200;
-        
     }
 
     #menu.show {
@@ -322,6 +317,15 @@ a {
     ul hr {
         background-color: black;
         border: 0.5px
+    }
+
+    body p {
+        font-size: 12px;
+    }
+
+    .card {
+        line-height: 1.5;
+        height: 450px
     }
 }
 
