@@ -1,23 +1,26 @@
-#menu {
-    background: #333;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Sidebar hidden by default */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
     color: #fff;
-    padding: 10px;
+    transition: left 0.3s ease;
+    padding: 15px;
 }
 
-#menu ul {
-    list-style: none;
-    padding: 0;
+#sidebar.show {
+    left: 0; /* Sidebar visible */
 }
 
-#menu li {
-    margin: 5px 0;
-}
-
-#menu a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hidden {
-    display: none;
+button {
+    position: absolute;
+    top: 15px;
+    left: 500px;
 }

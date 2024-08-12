@@ -63,6 +63,11 @@ h2 {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0
+}
+
+body p {
+    font-size: 12px;
 }
 
 .image-card {
@@ -232,10 +237,16 @@ a {
         padding: 10px;
         position: fixed;
         background: linear-gradient(to left, white, rgba(255, 255, 255, 0.678));
-        margin-top: 3px;
-        right: 0;
+        margin-top: 2.5px;
+        right: -250px;
         height: 100vh;
-        animation: navigasi 1s;
+        transition: right 0.3s ease;
+        z-index: -200;
+        
+    }
+
+    #menu.show {
+        right: 0; /* Sidebar visible */
     }
 
     #menu ul {
@@ -244,7 +255,7 @@ a {
     }
 
     #menu li {
-        margin: 20px 20px 20px 20px;
+        margin: 15px;
     }
 
     #menu a {
@@ -256,13 +267,8 @@ a {
         width: 100%;
     }
 
-    .hidden {
-        display: none;
-    }
-
     .toggle {
         border: none;
-
     }
 
     .bi {
@@ -298,7 +304,6 @@ a {
     li h3 {
         margin-left: 20px;
         color: black;
-        margin-top: 10px
     }
 
     li h2 {
@@ -309,6 +314,14 @@ a {
         background-color: rgb(19, 156, 19);
         padding: 20px;
         border-radius: 10px;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    ul hr {
+        background-color: black;
+        border: 0.5px
     }
 }
 
@@ -341,18 +354,5 @@ a {
 
     ul hr {
         display: none;
-    }
-}
-
-body {
-    margin: 0
-}
-
-@keyframes navigasi {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
     }
 }
